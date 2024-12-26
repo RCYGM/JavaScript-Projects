@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Validator</title>
+    <link rel="stylesheet" href="./03-validador-numero.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-header">
+            <div class="camera"></div>
+            <div class="speaker"></div>
+        </div>
+        <div class="phone-screen">
+            <h1>Phone Number Validator</h1>
+
+            <!-- Country selection with flag and input for phone number -->
+            <label for="country-select">Select your country:</label>
+            <div class="input-group">
+                <select id="country-select">
+                    <option id="country-select-option" value="US"  selected> 🇺🇸 United States</option>
+                    <option id="country-select-option" value="DR"> 🇩🇴 Dominican Republic</option>
+                    <option id="country-select-option" value="DE"> 🇩🇪 Germany</option>
+                </select>
+
+                <!-- Input field for the phone number -->
+                <input type="text" id="user-input" placeholder="Enter your phone number">
+            </div>
+
+            <!-- Buttons to validate and clear -->
+            <button id="check-btn">Validate</button>
+            <button id="clear-btn">Clear</button>
+
+            <!-- Section to display results -->
+            <div id="results-div"></div>
+        </div>
+        <div class="phone-footer"></div>
+    </div>
+    <script src="./03-validador-numero.js"></script>
+</body>
+</html>

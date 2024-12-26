@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.stat {
+    margin: 10px 0;
+}
+
+#pokemon-info {
+    margin-top: 20px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Estilos para el contenedor del buscador */
+#pokemon-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    #pokemon-info{
+        display: block;
+    }
+}
+/* Estilo para el encabezado */
+h1 {
+    color: #ff4757;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el input y botón */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #e84118;
+}
+
+/* Estilos para las secciones de información */
+#basic-info{
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    #basic-info{
+        flex-direction: row;
+    }
+}
+h2 {
+    font-size: 1.5em;
+    color: #2f3542;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff4757;
+    display: inline-block;
+}
+
+.stat {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #57606f;
+}
+
+.stat span {
+    font-weight: bold;
+    color: #2f3542;
+}
+
+#sprite{
+    background-color: #2f3542;
+    width: 100%;
+    margin: 4.50rem auto auto  3rem;
+    border-radius: 10px;
+}
+@media (min-width: 768px) {
+    #pokemon-img{
+        margin: 4.50rem 3rem auto  auto;
+    }
+}
+
+/* Estilos adicionales para responsividad */
+@media screen and (max-width: 600px) {
+    #pokemon-info {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+
+    #search-button {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
+
+.none{
+    display: none;
+}
